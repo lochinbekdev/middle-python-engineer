@@ -25,4 +25,19 @@ print(newline)
 
 
 # Formated stiring
+first="Lochinbek"
+last="Abduvoitov"
+full=f"{first} {last}"
+print(full)
+
+
+# String methods 
+
+string_methods="String methods"
+print(string_methods.lower())
+print(string_methods.upper())
+print(string_methods.title())
+print(string_methods.capitalize())
+
+
 
