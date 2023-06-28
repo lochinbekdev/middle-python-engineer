@@ -32,14 +32,20 @@ class Subject():
         return [x.get_info() for x in self.students]
 
 
-matem=Subject("Matematika")
-student1=Students("Lochin","Abduvoitov")
-student2=Students("Alex","Sandres")
-student3=Students("Husan","Anorboyev")
-student4=Students("Hasan","Anorboyev")
-matem.add_student(student1)
-matem.add_student(student2)
-matem.add_student(student3)
-matem.add_student(student4)
-print(matem.get_student_count())
-print(matem.get_students_info())
+
+def see_methods(class_name):
+    return [method for method in dir(class_name) if  method.startswith('__')]
+
+print(see_methods(Students))
+
+# matem=Subject("Matematika")
+# student1=Students("Lochin","Abduvoitov")
+# student2=Students("Alex","Sandres")
+# student3=Students("Husan","Anorboyev")
+# student4=Students("Hasan","Anorboyev")
+# matem.add_student(student1)
+# matem.add_student(student2)
+# matem.add_student(student3)
+# matem.add_student(student4)
+# print(matem.get_student_count())
+# print(matem.get_students_info())
