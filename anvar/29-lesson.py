@@ -1,9 +1,10 @@
 # Worked with object
 
 class Students():
-    def __init__(self,name,lastname):
+    def __init__(self,name,lastname,age):
         self.name = name
         self.lastname = lastname
+        self.age = age
     
     def get_info(self):
         return f"Student name {self.name} , lastname is {self.lastname}"
@@ -13,6 +14,9 @@ class Students():
     
     def get_lastname(self):
         return self.lastname
+    
+    def get_age(self):
+        return self.age
     
 
 class Subject():
