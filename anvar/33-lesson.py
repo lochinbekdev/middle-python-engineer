@@ -35,4 +35,20 @@ name="Xakimov Alibek Hacker bek"
 
 with open(filename,'a') as file:
     result=file.write('\n' + name + '\n')
-    print(result)
+    # print(result)
+
+
+import pickle
+
+talaba1={'ism':'hack','lastnamhe':'bek'}
+talaba2={'ism':'hackbek','lastnamhe':'Alibek'}
+
+# with open('data/info','wb') as file:
+#     pickle.dump(talaba1,file)
+#     pickle.dump(talaba2,file)
+
+with open('data/info','rb') as file:
+    talaba1=pickle.load(file)
+    talaba2=pickle.load(file)
+
+print(talaba1, '\n', talaba2)
