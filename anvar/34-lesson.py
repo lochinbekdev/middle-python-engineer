@@ -1,13 +1,9 @@
 # Json
 
 import json
-import googlemap
-from APIKEY import apikey
 
+x=10 
 
-
-gmaps=googlemap.Client(key = apikey)
-
-data = gmaps.geocode('Olmazor, Tashkent, Uzbekistan')
-
-print(data)
+x_json=json.dumps(x)
+print(type(x_json))
+print(type(x))
