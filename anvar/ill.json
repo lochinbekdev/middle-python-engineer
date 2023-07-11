@@ -1,0 +1,20 @@
+{
+    "name": "Alex Sandres",
+    "age": 30,
+    "familiy": true,
+    "child": [
+        "Azle",
+        "Xazr"
+    ],
+    "allergiya": null,
+    "hub": [
+        {
+            "name": "Analgin",
+            "count": 0.53
+        },
+        {
+            "name": "Panadol",
+            "count": 0.53
+        }
+    ]
+}

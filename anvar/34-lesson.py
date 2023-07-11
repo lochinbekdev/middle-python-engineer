@@ -24,6 +24,11 @@ ill =  {
     ]
 }
 
+
+# with open('ill.json','w') as f:
+#     json.dump(ill,f)
+
 ill_json=json.dumps(ill, indent=4)
-print(ill_json)
-print(ill.keys())
+decode =json.loads(ill_json)
+print(type(decode))
+# print(ill.keys())
