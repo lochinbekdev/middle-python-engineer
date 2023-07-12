@@ -39,16 +39,25 @@
 
 # KeyError
 
-user = {
-    "username" : "occupytheweb",
-    "status" : "active",
-    "email" : "admin@gmail.com",
-    "phone" : "+9989334523",
-}
+# user = {
+#     "username" : "occupytheweb",
+#     "status" : "active",
+#     "email" : "admin@gmail.com",
+#     "phone" : "+9989334523",
+# }
 
-key="email"
+# key="email"
+
+# try:
+#     print(f"Foydalanuvchi:{user[key]}")
+# except KeyError:
+#     print("Bunday qiymat mavjud emas")
+
+
+filename = "data.txt"
 
 try:
-    print(f"Foydalanuvchi:{user[key]}")
-except KeyError:
-    print("Bunday qiymat mavjud emas")
+    with open(filename) as f:
+        text=f.read()
+except FileNotFoundError:
+    print(f"{filename} bunday fayl mavjud emas")
