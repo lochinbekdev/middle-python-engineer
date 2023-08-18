@@ -16,6 +16,10 @@ class Students:
     def get_lastname(self):
         return self.lastname
     
+    def get_lastnameus(self):
+        return self.lastname
+    
+
     def introduce(self):
         print(f"Mening ismim {self.name} familiyam {self.lastname} mening  {self.brith} da tug'ilganman")
 
