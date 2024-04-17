@@ -40,6 +40,12 @@ devknowledgezone.isalnum()
 devknowledgezone.isalpha()
 ''' If all character must be alphabet it return true '''
 
+devknowledgezone.join('a')
+''' It add charcter to string '''
+
+devknowledgezone[::-1]
+''' This is return reverce given data ''' 
 
 
-print(devknowledgezone.isalpha())
+
+print(devknowledgezone[::-1])
